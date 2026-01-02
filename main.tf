@@ -4,10 +4,10 @@ region = "us-east-1"
 
 resource "aws_instance" "one" {
 count = 4
-ami = "ami-052064a798f08f0d3"
-instance_type = "t3.small"
-key_name = "jenkins"
-vpc_security_group_ids = ["sg-0f5196ef065be7d3c"]
+ami = "ami-068c0051b15cdb816"
+instance_type = "t3.medium"
+key_name = "terraform"
+vpc_security_group_ids = ["sg-0e029b6d99b1ebece"]
 tags = {
 Name = var.instance_names[count.index]
 }
