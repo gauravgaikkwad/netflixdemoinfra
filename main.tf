@@ -4,7 +4,7 @@ region = "us-east-1"
 
 resource "aws_instance" "one" {
 count = 4
-ami = "ami-0ecb62995f68bb549"
+ami = "ami-068c0051b15cdb816"
 instance_type = "c7i-flex.large"
 key_name = "terraform"
 vpc_security_group_ids = ["sg-0e029b6d99b1ebece"]
